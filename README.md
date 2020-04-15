@@ -1,4 +1,4 @@
-# UrgLaserRange
+# UrgLaserSensor
 A module to read distance data from URG 10-lx sensor and convert them into touch points. Used to convert walls, tables and other planes into touch screens. Currently supports up to 4 touch points.
 
 ## 使い方

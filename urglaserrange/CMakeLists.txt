@@ -7,28 +7,27 @@ project(urglaserrange)
 # Find OpenCV, you may need to set OpenCV_DIR variable
 # to the absolute path to the directory containing OpenCVConfig.cmake file
 # via the command line or GUI
-set( OpenCV_DIR "D:/Libraries/x64/opencv/build" )
+set( OpenCV_DIR "C:/Users/Sonny/Desktop/Workspace/Binaries/opencv_4.7" )
 option( OpenCV_STATIC OFF )
 find_package(OpenCV REQUIRED)
 
 # URG sensor
-set(URG_ROOT                 "D:/Libraries/urg_library-1.2.3/urg_library-1.2.3" )
-set(URG_INCLUDE_DIRS         "D:/Libraries/urg_library-1.2.3/urg_library-1.2.3/include/cpp")
-set(URG_INCLUDE_SAMPLE_DIRS  "D:/Libraries/urg_library-1.2.3/urg_library-1.2.3/samples/cpp")
-set(URG_INCLUDE_DIR_C        "D:/Libraries/urg_library-1.2.3/urg_library-1.2.3/include/c")
-set(URG_SRC                  "D:/Libraries/urg_library-1.2.3/urg_library-1.2.3/src")   
-set(URG_LIB_RELEASE_DIR      "D:/Libraries/urg_library-1.2.3/urg_library-1.2.3/vs2017/cpp/x64/Release")
+set(URG_ROOT                 "C:/Users/Sonny/Desktop/Applications/urg_library-ver.1.2.7/current" )
+set(URG_INCLUDE_DIRS         "C:/Users/Sonny/Desktop/Applications/urg_library-ver.1.2.7/current/include/cpp")
+set(URG_INCLUDE_SAMPLE_DIRS  "C:/Users/Sonny/Desktop/Applications/urg_library-ver.1.2.7/current/samples/cpp")
+set(URG_INCLUDE_DIR_C        "C:/Users/Sonny/Desktop/Applications/urg_library-ver.1.2.7/current/include/c")
+set(URG_SRC                  "C:/Users/Sonny/Desktop/Applications/urg_library-ver.1.2.7/current/src")   
+set(URG_LIB_RELEASE_DIR      "C:/Users/Sonny/Desktop/Applications/urg_library-ver.1.2.7/current/vs2019/cpp/x64/Release")
 
 set(URG_LIBS_RELEASE  ${URG_LIB_RELEASE_DIR}/urg_cpp.lib)
 
 # OSCPACK
-set(OSCPACK_INCLUDE_DIR      "D:/Libraries/oscpack_1_1_0")
+set(OSCPACK_INCLUDE_DIR      "C:/Users/Sonny/Desktop/Applications/oscpack_1_1_0")
 
 # GFLAGS
-set(gflags_DIR "D:/Libraries/gflags/install/lib/cmake/gflags")
 find_package(gflags REQUIRED)
-set(GFLAGS_INCLUDE "D:/Libraries/gflags/install/include")
-set(GFLAGS_LIB "D:/Libraries/gflags/install/lib/gflags_nothreads_static.lib")
+set(GFLAGS_INCLUDE "C:/Users/Sonny/Desktop/Workspace/Binaries/gflags/include")
+set(GFLAGS_LIB "C:/Users/Sonny/Desktop/Workspace/Binaries/gflags/lib/Release/gflags_nothreads_static.lib")
 
 # Set installation folder
 set (CMAKE_INSTALL_PREFIX "${CMAKE_BINARY_DIR}/install" CACHE PATH "default install path" FORCE )
